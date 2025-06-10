@@ -1,15 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { UserRegistration } from "@/components/UserRegistration";
 import { Toaster } from "@/components/ui/toaster";
-import LoginPage from "@/pages/Login";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-      </Routes>
+    <div className="min-h-screen bg-gray-50 dark:bg-slate-900 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+      <UserRegistration />
       <Toaster />
-    </BrowserRouter>
+    </div>
   );
 }
 
